@@ -1,3 +1,57 @@
-.topBar{
-    border-radius: 20px;
+/* === HEADER (same width as calculator) === */
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  width: 100%;
+  max-width: 660px;
+}
+
+@media (min-width: 768px) {
+  .topBar {
+    width: 66.666%;
+  }
+}
+
+@media (min-width: 992px) {
+  .topBar {
+    width: 50%;
+  }
+}
+
+/* === BODY SPACING (prevent overlap) === */
+body {
+  padding-top: 160px;
+}
+
+/* === CALCULATOR HEADER === */
+.calc-header {
+  background: linear-gradient(90deg, #d2232a, #a10f0f);
+  color: #fff;
+  margin: 0 -1.5rem; /* Pulls to full width of the card */
+  padding: 1rem 1.5rem;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+/* === INPUT SECTION === */
+.input-section label {
+  color: #444;
+}
+
+button.btn-danger {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* === RESULTS === */
+.results-section .bg-danger {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.results-section h4 {
+  color: #ffffff;
 }
